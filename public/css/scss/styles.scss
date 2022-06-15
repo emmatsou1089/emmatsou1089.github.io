@@ -20,22 +20,20 @@ body {
 
 }
 
-header {
-    background-color: rgb(28, 112, 84);
-}
 
 .container {
     margin: auto;
     width: 90%;
     max-width: 1140px;
-    background-color: rgb(146, 220, 130);
+    // background-color: rgb(146, 220, 130);
 }
+
 // ============
 // 頁首
-
 header {
-    background-color: chocolate;
+    background-color: rgb(28, 112, 84);
 }
+
 
 header>.container>h1 {
     padding-top: 20px;
@@ -63,3 +61,17 @@ header>.container>nav>ul>li>a {
 
 // ========
 // 內容
+.img-fluid {
+    width: 100%;
+
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    /*換行*/
+}
+
+.col-4 {
+    width: 33.33333%;
+}

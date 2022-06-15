@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -16,19 +17,14 @@ body {
   margin: 0;
 }
 
-header {
-  background-color: #1c7054;
-}
-
 .container {
   margin: auto;
   width: 90%;
   max-width: 1140px;
-  background-color: #92dc82;
 }
 
 header {
-  background-color: chocolate;
+  background-color: #1c7054;
 }
 
 header > .container > h1 {
@@ -52,4 +48,18 @@ header > .container > nav > ul > li > a {
   color: #622727;
   font-size: 1.2em;
   letter-spacing: 2px;
+}
+
+.img-fluid {
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  /*換行*/
+}
+
+.col-4 {
+  width: 33.33333%;
 }
