@@ -1,11 +1,11 @@
 body {
   background-color: aquamarine;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  color: blue;
+  color: #bb4f4f;
 }
 
 .bnt-primary {
-  background-color: #9de4e1;
+  background-color: #bb4f4f;
   color: darkblue;
   padding: 8px;
   border-radius: 4px;
