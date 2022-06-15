@@ -1,4 +1,20 @@
+// 設定變數$
+
+$primary-color:rgb(187, 79, 79);
+
+
 body{
 background-color: aquamarine;
 font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+color: blue;
+}
+
+.bnt-primary{
+    background-color: rgb(157, 228, 225);
+    color: darkblue;
+    padding: 8px;
+    border-radius: 4px;
+    text-decoration: none;
+    letter-spacing: 2px;
+
 }

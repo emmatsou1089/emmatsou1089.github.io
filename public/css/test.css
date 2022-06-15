@@ -1,4 +1,14 @@
 body {
   background-color: aquamarine;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: blue;
+}
+
+.bnt-primary {
+  background-color: #9de4e1;
+  color: darkblue;
+  padding: 8px;
+  border-radius: 4px;
+  text-decoration: none;
+  letter-spacing: 2px;
 }
