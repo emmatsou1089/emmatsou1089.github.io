@@ -82,3 +82,29 @@ header > .container > nav > ul > li > a {
 .text-center {
   text-align: center;
 }
+
+.date {
+  color: #622727;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+footer {
+  background-color: #622727;
+  padding: 40px 0px 40px 0；;
+}
+
+dt {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+dd {
+  margin-bottom: 40px;
+}
+
+dd > a {
+  color: azure;
+}
