@@ -1,58 +1,60 @@
-
 // 新增一個style.scss在scss資較夾內
-$primary-color:#622727;
+$primary-color: #622727;
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
-ul,ol{
+
+ul,
+ol {
     list-style-type: none;
 }
 
-a{
+a {
     text-decoration: none;
 }
-body{
-    margin:0;
-    
+
+body {
+    margin: 0;
+
 }
 
-header{
+header {
     background-color: rgb(28, 112, 84);
 }
 
-.container{
+.container {
     margin: auto;
-width: 90%;
+    width: 90%;
     max-width: 1140px;
     background-color: rgb(146, 220, 130);
 }
-header{
+
+header {
     background-color: chocolate;
 }
-header>.container>h1{
+
+header>.container>h1 {
     padding-top: 20px;
 }
 
-header>.container>a{
-   color:rgb(82, 114, 114)
+header>.container>a {
+    color: rgb(82, 114, 114);
 }
 
-header>.container>nav>ul{
+header>.container>nav>ul {
     display: flex;
     // justify-content:space-between;
 }
-header>.container>nav>li{
+
+header>.container>nav>li {
     margin-right: 30px;
 }
 
-header>.container>nav>ul>li>a{
+header>.container>nav>ul>li>a {
     line-height: 60px;
-    color:$primary-color;
+    color: $primary-color;
     font-size: 1.2em;
     letter-spacing: 2px;
-
-
-
 }
