@@ -1,4 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul, ol {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
 body {
   margin: 0;
-  background-color: aquamarine;
+}
+
+header {
+  background-color: #1c7054;
+}
+
+.container {
+  margin: auto;
+  width: 90%;
+  max-width: 1140px;
+  background-color: #92dc82;
+}
+
+header {
+  background-color: chocolate;
+}
+
+header > .container > h1 {
+  padding-top: 20px;
+}
+
+header > .container > a {
+  color: #527272;
+}
+
+header > .container > nav > ul {
+  display: flex;
+}
+
+header > .container > nav > li {
+  margin-right: 30px;
+}
+
+header > .container > nav > ul > li > a {
+  line-height: 60px;
+  color: #622727;
+  font-size: 1.2em;
+  letter-spacing: 2px;
 }
