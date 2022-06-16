@@ -94,22 +94,36 @@ h2{
 
 
 // 排列區
+// 四欄式
 .col-3 {
     width: calc(100% / 4 - 30px);
     margin: 0px 15px 40px 15px;
+    /* 上右下左*/
 }
-/* 上右下左*/
 
+// 三欄式
 .col-4 {
     width: calc(100% / 3 - 30px);
     margin: 0px 15px 40px 15px;
 }
 
+// 兩欄式
 .col-6 {
-    width: calc(100% / 3 - 30px);
+    width: calc(100% / 2 - 30px);
     margin: 0px 15px 40px 15px;
 }
 
+
+.col-8 {
+    width: calc(100% / 1.5 - 30px);
+    margin: 0px 15px 40px 15px;
+}
+
+
+.col-9 {
+    width: calc(100% / 1.333333 - 30px);
+    margin: 0px 15px 40px 15px;
+}
 
 
 // 頁尾區塊
@@ -134,4 +148,20 @@ dd>a{
 
 
 
+// 平面設計
+.breadcrumb{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.w-100{
+  width:100;
+}
 
+.w-20{
+    width:20%;
+}
+
+.w-80{
+    width:80%;
+}

@@ -90,6 +90,21 @@ dd > a {
   color: azure;
 }
 
+main > div > ul > li > {
+  box-sizing: border-box;
+}
+
+main > div > ul > li > a {
+  display: block;
+  background-color: #f3b415;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
 .main-row {
   display: flex;
   flex-direction: row;
@@ -103,7 +118,15 @@ dd > a {
   width: 80%;
 }
 
-.img {
+.img-row {
   display: flex;
   flex-wrap: wrap;
+}
+
+.img-circle {
+  border-radius: 40px;
+}
+
+.img-fluid {
+  width: 100%;
 }

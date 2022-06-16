@@ -109,9 +109,22 @@ dd>a{
 // ============
 //平面內頁區塊
 
-div>ul>li>a{
+main>div>ul>li>{
+    box-sizing: border-box;
     
 }
+
+main>div>ul>li>a {
+    display: block;
+    background-color: rgb(243, 180, 21);
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
 
 .main-row{ 
 display: flex;
@@ -126,8 +139,19 @@ flex-direction: row;
     width: 80%;
 }
 
-.img{
-        display: flex;
-        flex-wrap: wrap;
+.img-row{
 
-    }
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.img-circle{
+    border-radius: 40px;
+}
+
+.img-fluid {
+    width: 100%;
+
+}
+
