@@ -58,7 +58,7 @@ header > .container > nav > ul > li > a {
 /* 上右下左*/
 .col-4 {
   width: calc(100% / 3 - 30px);
-  margin: 0px 15px 40px 15px;
+  margin: 40px 10px 40px 10px;
 }
 
 .col-6 {
@@ -90,17 +90,20 @@ dd > a {
   color: azure;
 }
 
-ul,
-ol {
-  list-style-type: none;
-}
-
 .main-row {
   display: flex;
-  flex--direction: row;
+  flex-direction: row;
 }
 
-.img-row {
+.left {
+  width: 20%;
+}
+
+.right {
+  width: 80%;
+}
+
+.img {
   display: flex;
   flex-wrap: wrap;
 }
