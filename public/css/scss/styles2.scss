@@ -109,8 +109,13 @@ dd>a{
 // ============
 //平面內頁區塊
 
+ul,
+ol {
+    list-style-type: none;
+}
+
 .main-row{
-    width: 600px;
+    width: 40%;
     height: 250px;
 display: flex;
 flex-flow: row wrap;
@@ -123,6 +128,6 @@ flex-flow: row wrap;
 }
 
 .img-row{
-    display: flex;
-    flex:row;
-}
+        display: flex;
+        flex-direction: wrap;
+    }

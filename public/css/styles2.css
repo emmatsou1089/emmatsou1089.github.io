@@ -90,8 +90,13 @@ dd > a {
   color: azure;
 }
 
+ul,
+ol {
+  list-style-type: none;
+}
+
 .main-row {
-  width: 600px;
+  width: 40%;
   height: 250px;
   display: flex;
   flex-flow: row wrap;
@@ -104,5 +109,5 @@ dd > a {
 
 .img-row {
   display: flex;
-  flex: row;
+  flex-direction: wrap;
 }
