@@ -20,6 +20,7 @@ body {
 
 }
 
+
 .container {
     margin: auto;
     width: 90%;
@@ -32,6 +33,7 @@ body {
 header {
     background-color: rgb(28, 112, 84);
 }
+
 
 header>.container>h1 {
     padding-top: 20px;
@@ -57,42 +59,7 @@ header>.container>nav>ul>li>a {
     letter-spacing: 2px;
 }
 
-// ========
-// 內容
-.img-fluid {
-    width: 100%;
-
-}
-
-.img-rounded{
-    border-radius: 8px;
-}
-
-.img-circle{
-    border-radius: 40px;
-}
-
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    /*換行*/
-}
-
-
-.text-center{
-    text-align: center;
-}
-
-.date{
-    color:$primary-color
-}
-
-h2{
-    font-size: 2em;
-    margin:60px auto  30px auto;
-}
-
-
+// ============
 // 排列區
 .col-3 {
     width: calc(100% / 4 - 30px);
@@ -110,9 +77,15 @@ h2{
     margin: 0px 15px 40px 15px;
 }
 
-
-
+// ============
 // 頁尾區塊
+.footer-row {
+    display: flex;
+    flex-wrap: wrap;
+    /*換行*/
+}
+
+
 footer{
     background: $primary-color;
     padding:40px 0px 40px 0；
@@ -133,5 +106,23 @@ dd>a{
 }
 
 
+// ============
+//平面內頁區塊
 
-// 平面設計內容
+.main-row{
+    width: 600px;
+    height: 250px;
+display: flex;
+flex-flow: row wrap;
+
+}
+
+.main-colum{
+    display: flex;
+    flex-direction: column;
+}
+
+.img-row{
+    display: flex;
+    flex:row;
+}

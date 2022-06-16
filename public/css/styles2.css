@@ -50,37 +50,6 @@ header > .container > nav > ul > li > a {
   letter-spacing: 2px;
 }
 
-.img-fluid {
-  width: 100%;
-}
-
-.img-rounded {
-  border-radius: 8px;
-}
-
-.img-circle {
-  border-radius: 40px;
-}
-
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  /*換行*/
-}
-
-.text-center {
-  text-align: center;
-}
-
-.date {
-  color: #622727;
-}
-
-h2 {
-  font-size: 2em;
-  margin: 60px auto 30px auto;
-}
-
 .col-3 {
   width: calc(100% / 4 - 30px);
   margin: 0px 15px 40px 15px;
@@ -95,6 +64,12 @@ h2 {
 .col-6 {
   width: calc(100% / 3 - 30px);
   margin: 0px 15px 40px 15px;
+}
+
+.footer-row {
+  display: flex;
+  flex-wrap: wrap;
+  /*換行*/
 }
 
 footer {
@@ -113,4 +88,21 @@ dd {
 
 dd > a {
   color: azure;
+}
+
+.main-row {
+  width: 600px;
+  height: 250px;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.main-colum {
+  display: flex;
+  flex-direction: column;
+}
+
+.img-row {
+  display: flex;
+  flex: row;
 }
