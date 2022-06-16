@@ -100,11 +100,6 @@ ol {
   flex--direction: row;
 }
 
-.main-colum {
-  display: flex;
-  flex-direction: column;
-}
-
 .img-row {
   display: flex;
   flex-wrap: wrap;
