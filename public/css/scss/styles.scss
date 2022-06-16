@@ -1,5 +1,5 @@
 // 新增一個style.scss在scss資較夾內
-$primary-color: #622727;
+$primary-color: #f7c309;
 
 * {
     margin: 0;
@@ -30,15 +30,16 @@ body {
 // ============
 // 頁首
 header {
-    background-color: rgb(28, 112, 84);
+    background-color: rgb(235, 117, 48);
 }
 
 header>.container>h1 {
     padding-top: 20px;
+    
 }
 
-header>.container>a {
-    color: rgb(82, 114, 114);
+header>.container>h1>a {
+    color: rgb(233, 193, 107);
 }
 
 header>.container>nav>ul {
@@ -72,12 +73,22 @@ header>.container>nav>ul>li>a {
     border-radius: 100%;
 }
 
-
-
 .text-center{
     text-align: center;
 }
 
+
+.text-left{
+    text-align: left;
+}
+
+.text-right{
+    text-align: right;
+}
+
+.text-justify{
+    text-align: justify;
+}
 
 .title a{
     color:aquamarine;
@@ -128,7 +139,7 @@ h2{
 
 
 .col-9 {
-    width: calc(100% / 1.333333 - 30px);
+    width: calc(100% / 1.33333333333 - 30px);
     margin: 0px 15px 40px 15px;
 }
 
@@ -178,10 +189,7 @@ dd>a{
 .w-80{
     width:80%;
 }
- element.style{
-    width: calc(100% / 1.5 -30);
-    margin: 0;
- }
+
 
  .bnt-primary{
     background-color:$primary-color;

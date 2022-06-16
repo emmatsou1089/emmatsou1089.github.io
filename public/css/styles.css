@@ -24,15 +24,15 @@ body {
 }
 
 header {
-  background-color: #1c7054;
+  background-color: #eb7530;
 }
 
 header > .container > h1 {
   padding-top: 20px;
 }
 
-header > .container > a {
-  color: #527272;
+header > .container > h1 > a {
+  color: #e9c16b;
 }
 
 header > .container > nav > ul {
@@ -45,7 +45,7 @@ header > .container > nav > li {
 
 header > .container > nav > ul > li > a {
   line-height: 60px;
-  color: #622727;
+  color: #f7c309;
   font-size: 1.2em;
   letter-spacing: 2px;
 }
@@ -66,6 +66,18 @@ header > .container > nav > ul > li > a {
   text-align: center;
 }
 
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
 .title a {
   color: aquamarine;
   font-size: 1.5em;
@@ -73,7 +85,7 @@ header > .container > nav > ul > li > a {
 }
 
 .date {
-  color: #622727;
+  color: #f7c309;
 }
 
 h2 {
@@ -109,12 +121,12 @@ h2 {
 }
 
 .col-9 {
-  width: calc(100% / 1.333333 - 30px);
+  width: calc(100% / 1.33333333333 - 30px);
   margin: 0px 15px 40px 15px;
 }
 
 footer {
-  background: #622727;
+  background: #f7c309;
   padding: 40px 0px 40px 0；;
 }
 
@@ -154,13 +166,8 @@ dd > a {
   width: 80%;
 }
 
-element.style {
-  width: calc(100% / 1.5 -30);
-  margin: 0;
-}
-
 .bnt-primary {
-  background-color: #622727;
+  background-color: #f7c309;
   padding: 15px;
   color: black;
   display: block;
