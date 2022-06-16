@@ -97,7 +97,7 @@ ol {
 
 .main-row {
   display: flex;
-  flex-flow: row wrap;
+  flex--direction: row;
 }
 
 .main-colum {
