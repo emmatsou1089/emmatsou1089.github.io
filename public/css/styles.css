@@ -166,17 +166,17 @@ dd > a {
   width: 80%;
 }
 
-.bnt-primary {
+.btn-primary {
   background-color: #f3b415;
   padding: 15px;
   color: black;
   display: block;
-  margin-bottom: 5px;
+  margin-bottom: 20px;
   border-radius: 4px;
   text-align: center;
 }
 
-.bnt-primary:hover {
+.btn-primary:hover {
   background: black;
   color: burlywood;
 }
