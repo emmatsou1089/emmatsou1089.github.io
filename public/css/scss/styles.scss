@@ -190,6 +190,10 @@ dd>a{
     width:80%;
 }
 
+element.style{
+width:calc(100% / 1.5 - 30 px);
+margin:0
+}
 
  .bnt-primary{
     background-color:$primary-color;
@@ -199,5 +203,12 @@ dd>a{
     margin-bottom: 30px;
     border-radius:4px ;
     text-align: center;
+
+ }
+
+ .bnt-primary:hover{
+    background:black;
+    color:burlywood
+    
 
  }
