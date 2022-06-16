@@ -66,6 +66,14 @@ header>.container>nav>ul>li>a {
 
 }
 
+.img-rounded{
+    border-radius: 8px;
+}
+
+.img-circle{
+    border-radius: 100%;
+}
+
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -102,11 +110,12 @@ header>.container>nav>ul>li>a {
 
 h2{
     font-size: 2em;
+    margin:60px auto  30px auto;
 }
 
 // 頁尾區塊
 footer{
-    background-color: $primary-color;
+    background: $primary-color;
     padding:40px 0px 40px 0；
 }
 
@@ -116,7 +125,7 @@ dt{
 
 }
 dd{
-    margin-bottom: 40px;
+    margin-bottom: 4px;
 
 }
 
