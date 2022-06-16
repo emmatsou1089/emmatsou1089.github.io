@@ -185,3 +185,12 @@ element.style {
   background: black;
   color: burlywood;
 }
+
+aside > ul > li > a {
+  display: block;
+  background-color: #f3b415;
+  height: 50px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+}
