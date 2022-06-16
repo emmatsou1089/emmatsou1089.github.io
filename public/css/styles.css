@@ -59,17 +59,17 @@ header > .container > nav > ul > li > a {
 }
 
 .img-circle {
-  border-radius: 40px;
-}
-
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  /*換行*/
+  border-radius: 100%;
 }
 
 .text-center {
   text-align: center;
+}
+
+.title a {
+  color: aquamarine;
+  font-size: 1.5em;
+  font-weight: 700;
 }
 
 .date {
@@ -81,8 +81,15 @@ h2 {
   margin: 60px auto 30px auto;
 }
 
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  /*換行*/
+}
+
 .col-3 {
   width: calc(100% / 4 - 30px);
+  margin: 0px 15px 40px 15px;
   /* 上右下左*/
 }
 
@@ -121,7 +128,7 @@ dd {
 }
 
 dd > a {
-  color: azure;
+  color: #55a4a4;
 }
 
 .breadcrumb {
@@ -158,4 +165,6 @@ element.style {
   color: black;
   display: block;
   margin-bottom: 30px;
+  border-radius: 4px;
+  text-align: center;
 }

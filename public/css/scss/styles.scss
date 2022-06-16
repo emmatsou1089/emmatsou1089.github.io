@@ -69,18 +69,20 @@ header>.container>nav>ul>li>a {
 }
 
 .img-circle{
-    border-radius: 40px;
+    border-radius: 100%;
 }
 
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    /*換行*/
-}
 
 
 .text-center{
     text-align: center;
+}
+
+
+.title a{
+    color:aquamarine;
+    font-size: 1.5em;
+    font-weight: 700;
 }
 
 .date{
@@ -92,12 +94,17 @@ h2{
     margin:60px auto  30px auto;
 }
 
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    /*換行*/
+}
 
 // 排列區
 // 四欄式
 .col-3 {
     width: calc(100% / 4 - 30px);
-    // margin: 0px 15px 40px 15px;
+     margin: 0px 15px 40px 15px;
     /* 上右下左*/
 }
 
@@ -143,7 +150,7 @@ dd{
 }
 
 dd>a{
-    color: azure;
+    color: rgb(85, 164, 164);
 }
 
 
@@ -177,10 +184,12 @@ dd>a{
  }
 
  .bnt-primary{
-    background-color:#622727;
+    background-color:$primary-color;
     padding:15px;
     color:black;
     display:block;
     margin-bottom: 30px;
+    border-radius:4px ;
+    text-align: center;
 
  }
