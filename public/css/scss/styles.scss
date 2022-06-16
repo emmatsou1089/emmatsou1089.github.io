@@ -191,12 +191,11 @@ dd>a{
 }
 
 element.style{
-width:calc(100% / 1.5 - 30 px);
-margin:0
+
 }
 
  .bnt-primary{
-    background-color:$primary-color;
+    background-color: rgb(243, 180, 21);
     padding:15px;
     color:black;
     display:block;
@@ -213,14 +212,11 @@ margin:0
 
  }
 
- aside>ul>li>a{
-    display: block;
-    background-color: rgb(243, 180, 21);
-    height: 50px;
-    text-align: center;
-    text-decoration: none;
-    color: rgb(255, 255, 255);
+ aside>ul>li>{
+    margin-bottom:30px;
     
 
     
  }
+
+
