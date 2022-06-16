@@ -35,7 +35,7 @@ header {
 
 header>.container>h1 {
     padding-top: 20px;
-    
+
 }
 
 header>.container>h1>a {
@@ -65,44 +65,44 @@ header>.container>nav>ul>li>a {
 
 }
 
-.img-rounded{
+.img-rounded {
     border-radius: 8px;
 }
 
-.img-circle{
+.img-circle {
     border-radius: 100%;
 }
 
-.text-center{
+.text-center {
     text-align: center;
 }
 
 
-.text-left{
+.text-left {
     text-align: left;
 }
 
-.text-right{
+.text-right {
     text-align: right;
 }
 
-.text-justify{
+.text-justify {
     text-align: justify;
 }
 
-.title a{
-    color:aquamarine;
+.title a {
+    color: aquamarine;
     font-size: 1.5em;
     font-weight: 700;
 }
 
-.date{
-    color:$primary-color
+.date {
+    color: $primary-color
 }
 
-h2{
+h2 {
     font-size: 2em;
-    margin:60px auto  30px auto;
+    margin: 60px auto 30px auto;
 }
 
 .row {
@@ -115,7 +115,7 @@ h2{
 // 四欄式
 .col-3 {
     width: calc(100% / 4 - 30px);
-     margin: 0px 15px 40px 15px;
+    margin: 0px 15px 40px 15px;
     /* 上右下左*/
 }
 
@@ -145,29 +145,30 @@ h2{
 
 
 // 頁尾區塊
-footer{
+footer {
     background: $primary-color;
-    padding:40px 0px 40px 0；
+    padding: 40px 0px 40px 0；
 }
 
-dt{
+dt {
     font-size: 1.2em;
     margin-bottom: 10px;
 
 }
-dd{
+
+dd {
     margin-bottom: 4px;
 
 }
 
-dd>a{
+dd>a {
     color: rgb(85, 164, 164);
 }
 
 
 
 // 平面設計
-.breadcrumb{
+.breadcrumb {
     display: flex;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -176,60 +177,67 @@ dd>a{
 
 .breadcrumb a {
     color: black;
-  }
-
-.w-100{
-  width:100;
 }
 
-.w-20{
-    width:20%;
+.w-100 {
+    width: 100;
 }
 
-.w-80{
-    width:80%;
+.w-20 {
+    width: 20%;
 }
 
-element.style{
-
+.w-80 {
+    width: 80%;
 }
 
-.btn-primary{
+element.style {}
+
+.btn-primary {
     background-color: rgb(243, 180, 21);
-    padding:15px;
-    color:black;
-    display:block;
+    padding: 15px;
+    color: black;
+    display: block;
     margin-bottom: 20px;
-    border-radius:4px ;
+    border-radius: 4px;
     text-align: center;
 
- }
+}
 
- .btn-primary:hover{
-    background:black;
-    color:burlywood
-    
+.btn-primary:hover {
+    background: black;
+    color: burlywood
+}
 
- }
+.img-wrap {
+    display: block;
+    position: relative;
+    margin-bottom: 10px;
+}
 
- aside>ul>li>{
-    margin-bottom:30px;
-    
-
-    
- }
+.img-overlay {
+    overflow: hidden;
+    border-radius: 8px;
+}
 
 
+.img-wrap img {
+    vertical-align: top;
+    transform: all 0.5s;
+}
 
-//  aside>ul>li>a{
-    // display: block;
-    //background-color: rgb(243, 180, 21);
-    //line-height: 50px;
-    // border: 1px solid #fff;
-    //text-align: center;
-    //text-decoration: none;
-    //color: rgb(255, 255, 255);
-    
+.img-wrap img:hover {
+    transform: scle(1.5);
+}
 
-    
- //}/
+.icon-new {
+    position: absolute;
+    width: 50px;
+    line-height: 50px;
+    color: cornsilk;
+    border-radius: 100%;
+    left: -25px;
+    top: -25px;
+    background-color: green;
+
+}

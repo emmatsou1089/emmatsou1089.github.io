@@ -181,6 +181,33 @@ dd > a {
   color: burlywood;
 }
 
-aside > ul > li > {
-  margin-bottom: 30px;
+.img-wrap {
+  display: block;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.img-overlay {
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.img-wrap img {
+  vertical-align: top;
+  transform: all 0.5s;
+}
+
+.img-wrap img:hover {
+  transform: scle(1.5);
+}
+
+.icon-new {
+  position: absolute;
+  width: 50px;
+  line-height: 50px;
+  color: cornsilk;
+  border-radius: 100%;
+  left: -25px;
+  top: -25px;
+  background-color: green;
 }
