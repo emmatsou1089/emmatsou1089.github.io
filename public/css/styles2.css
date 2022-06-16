@@ -107,5 +107,5 @@ ol {
 
 .img-row {
   display: flex;
-  flex-direction: wrap;
+  flex-wrap: wrap;
 }
