@@ -83,7 +83,6 @@ h2 {
 
 .col-3 {
   width: calc(100% / 4 - 30px);
-  margin: 0px 15px 40px 15px;
   /* 上右下左*/
 }
 
@@ -129,6 +128,11 @@ dd > a {
   display: flex;
   margin-top: 20px;
   margin-bottom: 20px;
+  width: 100%;
+}
+
+.breadcrumb a {
+  color: black;
 }
 
 .w-100 {
@@ -141,4 +145,17 @@ dd > a {
 
 .w-80 {
   width: 80%;
+}
+
+element.style {
+  width: calc(100% / 1.5 -30);
+  margin: 0;
+}
+
+.bnt-primary {
+  background-color: #622727;
+  padding: 15px;
+  color: black;
+  display: block;
+  margin-bottom: 30px;
 }
