@@ -96,8 +96,6 @@ ol {
 }
 
 .main-row {
-  width: 40%;
-  height: 250px;
   display: flex;
   flex-flow: row wrap;
 }
