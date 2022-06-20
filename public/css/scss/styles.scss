@@ -242,3 +242,61 @@ dd>a {
     background-color: green;
 
 }
+
+//小於767px以上執行
+@media(max-width:767px) {
+
+    // max-width:767 end
+
+    // icon-meun
+    h1 {
+        width: 85%;
+        background-color: darkgreen;
+    }
+
+    .icon-menu {
+        float: right;
+        // width:15%;
+        display: block;
+        background-color: rgb(8, 85, 172);
+        color: azure;
+        line-height: 60px;
+        text-align: center;
+    }
+
+    header>.container>nav {
+        width: 100%;
+        float: left;
+        // position: relative;
+    }
+
+
+    header>.container>nav>ul {
+        display: block;
+        // position: absolute;
+    }
+
+    header>.container>nav>ul>li {
+        width: 100%;
+    }
+
+    header>.container>nav>ul>li>a {
+       display: block;
+       background-color: rgb(130, 135, 135);
+       margin-bottom: 5px;
+    }
+
+    .overflower-hidden {
+        overflow: hidden;
+    }
+
+}
+
+// 超過768px以上執行
+@media(min-width:768px) {
+    .icon-menu {
+        display: none;
+    }
+}
+
+// min-width:768 end
