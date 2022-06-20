@@ -1,0 +1,101 @@
+doctype html
+// ctrl + a
+// ctrl+c
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible' content='IE=edge')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    title emma
+    link(rel='stylesheet' href='public/css/styles.css')
+  body
+    header.overflower-hidden
+      .container
+        a.icon-menu(href="#") menu
+        h1
+          a(href='index.html') Emma's portfolio
+        nav
+          ul
+            li
+              a(href='aboutus.html') 關於我/
+            li
+              a(href='desgin-list.html') 平面作品/
+            li
+              a(href='#') 網頁設計作品/
+            li
+              a(href='contactus.html') 聯絡我
+    // 頁首結尾
+    
+    .container
+            .row
+              ul.col-12.breadcrumb
+                li
+                  a(href='index.html') 首頁
+                | &nbsp;&gt;&nbsp;
+                li
+                  a(href='aboutus') 關於我
+
+
+
+    .container
+      .row
+        .col-12
+            h2 關於我
+      .row 
+        .col-12.col-md-6
+          img.img-fluid.img-rounded(src='https://loremflickr.com/300/300', alt='')
+        .col-12.col-md-6 
+          p 文字文字內容內容
+
+      .row
+        .col-12.col-md-6 
+          img.img-fluid.img-rounded(src='https://loremflickr.com/300/300', alt='')
+        .col-12.col-md-6.order-md-1 
+          h2 文字文字內容內容
+          p 其他事項
+
+  
+    footer
+      .container.footerbgc
+        .row
+          dl.col-3
+            dt 標題01
+            dd
+              a(href='#') 項目01
+            dd
+              a(href='#') 項目02
+            dd
+              a(href='#') 項目03
+            dd
+              a(href='#') 項目04
+          dl.col-3
+            dt 標題02
+            dd
+              a(href='#') 項目01
+            dd
+              a(href='#') 項目02
+            dd
+              a(href='#') 項目03
+            dd
+              a(href='#') 項目04
+          dl.col-3
+            dt 標題03
+            dd
+              a(href='#') 項目01
+            dd
+              a(href='#') 項目02
+            dd
+              a(href='#') 項目03
+            dd
+              a(href='#') 項目04
+          dl.col-3
+            dt 標題04
+            dd
+              a(href='#') 項目01
+            dd
+              a(href='#') 項目02
+            dd
+              a(href='#') 項目03
+            dd
+              a(href='#') 項目04
+        p.copyright.text-center copyright

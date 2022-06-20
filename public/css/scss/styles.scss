@@ -112,37 +112,90 @@ h2 {
     /*換行*/
 }
 
-// 排列區
-// 四欄式
-.col-3 {
-    width: calc(100% / 4 - 30px);
-    margin: 0px 15px 40px 15px;
-    /* 上右下左*/
+
+
+// 排列區star
+
+@for $i from 1 through 12{
+    .col-#{$i}{
+        --num:calc(12/#{$i});
+        width:calc(100% /var(--num) - 30px);
+        margin:0px 15px 40px 15px;
+    }
 }
+
+// // 四欄式
+// .col-3 {
+//     width: calc(100% / 4 - 30px);
+//     margin: 0px 15px 40px 15px;
+//     /* 上右下左*/
+// }
 
 // 三欄式
-.col-4 {
-    width: calc(100% / 3 - 30px);
-    margin: 0px 15px 40px 15px;
+// .col-4 {
+//     width: calc(100% / 3 - 30px);
+//     margin: 0px 15px 40px 15px;
+// }
+
+// // 兩欄式
+// .col-6 {
+//     width: calc(100% / 2 - 30px);
+//     margin: 0px 15px 40px 15px;
+// }
+
+
+// .col-8 {
+//     width: calc(100% / 1.5 - 30px);
+//     margin: 0px 15px 40px 15px;
+// }
+
+// .col-9 {
+//     width: calc(100% / 1.33333333333 - 30px);
+//     margin: 0px 15px 40px 15px;
+// }
+
+// 排列區end******************
+
+
+
+// 響應式設定star
+
+// 768px star
+@media(min-width:768px){
+    @for $i from 1 through 12{
+        .col-md-#{$i}{
+            --num:calc(12/#{$i});
+            width:calc(100% /var(--num) - 30px);
+            margin:0px 15px 40px 15px;
+    }
+}
+}
+// 768px end
+
+// 1200px star1
+@media(min-width:1200px){
+    @for $i from 1 through 12{
+        .col-lg-#{$i}{
+            --num:calc(12/#{$i});
+            width:calc(100% /var(--num) - 30px);
+            margin:0px 15px 40px 15px;
+    }
+}
+}
+// 1200px end
+
+@media (min-width: 768px) {
+    .order-md-1 {
+      order: -1;
+    }
 }
 
-// 兩欄式
-.col-6 {
-    width: calc(100% / 2 - 30px);
-    margin: 0px 15px 40px 15px;
-}
+// 響應式設定end
 
 
-.col-8 {
-    width: calc(100% / 1.5 - 30px);
-    margin: 0px 15px 40px 15px;
-}
 
 
-.col-9 {
-    width: calc(100% / 1.33333333333 - 30px);
-    margin: 0px 15px 40px 15px;
-}
+
 
 
 // 頁尾區塊
@@ -169,6 +222,7 @@ dd>a {
 
 
 // 平面設計
+// 麵包屑
 .breadcrumb {
     display: flex;
     margin-top: 20px;
@@ -210,6 +264,10 @@ dd>a {
     color: burlywood
 }
 
+.text-primary {
+    color: #bdb3a7;
+  }
+
 .img-wrap {
     display: block;
     position: relative;
@@ -243,20 +301,22 @@ dd>a {
 
 }
 
-//小於767px以上執行
-@media(max-width:767px) {
 
-    // max-width:767 end
+
+//小於767px以上執行star********
+@media(max-width:767px) {
 
     // icon-meun
     h1 {
         width: 85%;
-        background-color: darkgreen;
+        // background-color: darkgreen;
+        display: block;
+           
     }
 
     .icon-menu {
         float: right;
-        // width:15%;
+        width:15%;
         display: block;
         background-color: rgb(8, 85, 172);
         color: azure;
@@ -268,7 +328,12 @@ dd>a {
         width: 100%;
         float: left;
         // position: relative;
+        display: none;
     }
+
+    header>.container>nav.active {
+        display: block;
+    } 
 
 
     header>.container>nav>ul {
@@ -291,6 +356,9 @@ dd>a {
     }
 
 }
+ // max-width:767 end*******
+
+
 
 // 超過768px以上執行
 @media(min-width:768px) {
@@ -299,4 +367,17 @@ dd>a {
     }
 }
 
-// min-width:768 end
+// min-width:768 end******
+
+.titlebutton{
+    display: flex;
+    width: 100%;
+}
+
+.titlebuttona{
+    display: block;
+    padding:5px 20px 5px 20px;
+    background-color: #f7c309;
+    margin-right: 30px;
+    
+}

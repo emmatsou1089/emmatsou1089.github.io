@@ -1,0 +1,119 @@
+doctype html
+// ctrl + a
+// ctrl+c
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible' content='IE=edge')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    title emma
+    link(rel='stylesheet' href='public/css/styles.css')
+  body
+    header.overflower-hidden
+      .container
+        a.icon-menu(href="#") menu
+        h1
+          a(href='index.html') Emma's portfolio
+        nav
+          ul
+            li
+              a(href='aboutus.html') 關於我/
+            li
+              a(href='desgin-list.html') 平面作品/
+            li
+              a(href='#') 網頁設計作品/
+            li
+              a(href='contactus.html') 聯絡我
+
+    .container
+      .row
+        ul.col-12.breadcrumb
+          li
+            a(href='index.html') 首頁
+          | &nbsp;&gt;&nbsp;
+          li
+            a(href='contactus.html') 關於我
+            
+      // content star
+    
+
+      .row
+        ul.col-12.titlebutton
+            li
+              a.titlebuttona(href='') 活動資訊
+            li
+              a.titlebuttona(href='') 伯朗公告
+            li
+              a.titlebuttona(href='') 店內活動
+
+      .row
+        .col-12.col-md-6.text-primary
+          h3 最新內容 
+              // work start
+        .col-12.col-md-6.text-center
+          a.img-wrap(href='#')
+            .img-overlay
+              img.img-fluid.img-rounded(src='https://loremflickr.com/300/300', alt='')
+          a.text-primary(href='#') 商品名稱1
+              // work end
+    
+      .row
+        .col-12.text-primary
+          h3 詳細內容
+           p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam sed quae cumque quis nulla eum esse consectetur odio vitae soluta dicta, in ipsam labore dolorum quam consequuntur minus enim aspernatur.
+           p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam sed quae cumque quis nulla eum esse consectetur odio vitae soluta dicta, in ipsam labore dolorum quam consequuntur minus enim aspernatur.
+
+      
+      
+      
+      // container end 
+
+
+
+
+
+    // footer>.container>dl*5>dt{標題$$}>dd*4>a{項目$$}^^P.COPY
+    footer
+      .container.footerbgc
+        .row
+          dl.col-3
+            dt 標題01
+            dd
+              a(href='#') 項目01
+            dd
+              a(href='#') 項目02
+            dd
+              a(href='#') 項目03
+            dd
+              a(href='#') 項目04
+          dl.col-3
+            dt 標題02
+            dd
+              a(href='#') 項目01
+            dd
+              a(href='#') 項目02
+            dd
+              a(href='#') 項目03
+            dd
+              a(href='#') 項目04
+          dl.col-3
+            dt 標題03
+            dd
+              a(href='#') 項目01
+            dd
+              a(href='#') 項目02
+            dd
+              a(href='#') 項目03
+            dd
+              a(href='#') 項目04
+          dl.col-3
+            dt 標題04
+            dd
+              a(href='#') 項目01
+            dd
+              a(href='#') 項目02
+            dd
+              a(href='#') 項目03
+            dd
+              a(href='#') 項目04
+        p.copyright.text-center copyright

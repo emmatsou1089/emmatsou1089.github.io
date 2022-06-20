@@ -1,36 +1,41 @@
 doctype html
+// ctrl + a
+// ctrl+c
 html(lang='en')
   head
     meta(charset='UTF-8')
-    meta(http-equiv='X-UA-Compatible', content='IE=edge')
-    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(http-equiv='X-UA-Compatible' content='IE=edge')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
     title emma
-    link(rel='stylesheet', href='public/css/styles.css')
+    link(rel='stylesheet' href='public/css/styles.css')
   body
-    header
+    header.overflower-hidden
       .container
+        a.icon-menu(href="#") menu
         h1
           a(href='index.html') Emma's portfolio
         nav
           ul
             li
-              a(href='#') 關於我/
+              a(href='aboutus.html') 關於我/
             li
               a(href='desgin-list.html') 平面作品/
             li
               a(href='#') 網頁設計作品/
             li
-              a(href='#') 聯絡我
-    // content star
+              a(href='contactus.html') 聯絡我
+
     .container
       .row
-        ul.breadcrumb
+        ul.col-12.breadcrumb
           li
             a(href='index.html') 首頁
           | &nbsp;&gt;&nbsp;
           li
             a(href='desgin-list.html') 平面作品
-        aside.col-3
+        
+        
+        aside.col-12.col-md-3.col-lg-2
           ul
             li
               a.btn-primary(href='') 分類
@@ -39,15 +44,11 @@ html(lang='en')
             li
               a.btn-primary(href='') 作品2
             li
-              a.btn-primary(href='') 作品3
-            li
-              a.btn-primary(href='') 作品4
-            li
-              a.btn-primary(href='') 作品5
-        main.col-9
+
+        main.col-12.col-md-9.col-lg-10
           .row
             // work start
-            .col-4.text-center
+            .col-12.col-md-4.text-center
               a.img-wrap(href='#')
                 .img-overlay
                   img.img-fluid.img-rounded(src='https://loremflickr.com/300/300', alt='')
@@ -55,7 +56,7 @@ html(lang='en')
               a.text-primary(href='#') 商品名稱1
             // work end
             // work start
-            .col-4.text-center
+            .col-12.col-md-4.text-center
               a.img-wrap(href='#')
                 .img-overlay
                   img.img-fluid.img-rounded(src='https://loremflickr.com/300/300', alt='')
@@ -63,7 +64,7 @@ html(lang='en')
               a.text-primary(href='#') 商品名稱2
             // work end
             // work start
-            .col-4.text-center
+            .col-12.col-md-4.text-center
               a.img-wrap(href='#')
                 .img-overlay
                   img.img-fluid.img-rounded(src='https://loremflickr.com/300/300', alt='')
@@ -71,7 +72,7 @@ html(lang='en')
               a.text-primary(href='#') 商品名稱3
             // work end
             // work start
-            .col-4.text-center
+            .col-12.col-md-4.text-center
               a.img-wrap(href='#')
                 .img-overlay
                   img.img-fluid.img-rounded(src='https://loremflickr.com/300/300', alt='')
@@ -79,7 +80,7 @@ html(lang='en')
               a.text-primary(href='#') 商品名稱4
             // work end
             // work start
-            .col-4.text-center
+            .col-12.col-md-4.text-center
               a.img-wrap(href='#')
                 .img-overlay
                   img.img-fluid.img-rounded(src='https://loremflickr.com/300/300', alt='')
@@ -87,7 +88,7 @@ html(lang='en')
               a.text-primary(href='#') 商品名稱5
             // work end
             // work start
-            .col-4.text-center
+            .col-12.col-md-4.text-center
               a.img-wrap(href='#')
                 .img-overlay
                   img.img-fluid.img-rounded(src='https://loremflickr.com/300/300', alt='')
@@ -96,6 +97,13 @@ html(lang='en')
             // work end
     // container
     // footer>.container>dl*5>dt{標題$$}>dd*4>a{項目$$}^^P.COPY
+   
+  .container 
+    .row
+
+   
+   
+   
     footer
       .container.footerbgc
         .row
