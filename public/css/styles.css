@@ -32,7 +32,7 @@ header > .container h1 {
 }
 
 header > .container h1 > a {
-  color: #f7c309;
+  color: #0855ac;
 }
 
 header > .container nav > ul {
@@ -46,6 +46,7 @@ header > .container nav > li {
 header > .container nav > ul > li > a {
   line-height: 60px;
   color: #f7c309;
+  padding-right: 30px;
   font-size: 1.2em;
   letter-spacing: 2px;
 }
@@ -57,6 +58,33 @@ header > .container nav > ul > li > a {
 
   header > .container nav > ul > li {
     position: relative;
+  }
+
+  header {
+    position: relative;
+  }
+
+  header > .container h1 {
+    position: absolute;
+    left: 50%;
+    background-color: green;
+    transform: translateX(-50%);
+    background-color: blueviolet;
+    line-height: 60px;
+    padding-top: 0px;
+  }
+
+  header nav {
+    display: flew;
+    justify-content: center;
+  }
+
+  header > .container nav > ul > li {
+    margin-left: 20px;
+  }
+
+  header > .container nav > ul > li:nth-child(2) {
+    margin-right: 250px;
   }
 
   header > .container nav > ul > li:hover .submenu {
