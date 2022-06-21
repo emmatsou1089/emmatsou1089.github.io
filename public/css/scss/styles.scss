@@ -33,25 +33,25 @@ header {
     background-color: rgb(235, 117, 48);
 }
 
-header>.container>h1 {
+header>.container h1 {
     padding-top: 20px;
 
 }
 
-header>.container>h1>a {
+header>.container h1>a {
     color: rgb(233, 193, 107);
 }
 
-header>.container>nav>ul {
+header>.container nav>ul {
     display: flex;
     // justify-content:space-between;
 }
 
-header>.container>nav>li {
+header>.container nav>li {
     margin-right: 30px;
 }
 
-header>.container>nav>ul>li>a {
+header>.container nav>ul>li>a {
     line-height: 60px;
     color: $primary-color;
     font-size: 1.2em;
@@ -92,13 +92,13 @@ header>.container>nav>ul>li>a {
 }
 
 .title a {
-    color: aquamarine;
+    color: rgb(72, 12, 4);
     font-size: 1.5em;
     font-weight: 700;
 }
 
 .date {
-    color: $primary-color
+    color: #ac6610
 }
 
 h2 {
@@ -114,15 +114,7 @@ h2 {
 
 
 
-// 排列區star
-
-@for $i from 1 through 12{
-    .col-#{$i}{
-        --num:calc(12/#{$i});
-        width:calc(100% /var(--num) - 30px);
-        margin:0px 15px 40px 15px;
-    }
-}
+// 排列區star//
 
 // // 四欄式
 // .col-3 {
@@ -143,7 +135,6 @@ h2 {
 //     margin: 0px 15px 40px 15px;
 // }
 
-
 // .col-8 {
 //     width: calc(100% / 1.5 - 30px);
 //     margin: 0px 15px 40px 15px;
@@ -158,35 +149,48 @@ h2 {
 
 
 
-// 響應式設定star
+// 響應式設定col圖面 star
 
-// 768px star
-@media(min-width:768px){
-    @for $i from 1 through 12{
-        .col-md-#{$i}{
-            --num:calc(12/#{$i});
-            width:calc(100% /var(--num) - 30px);
-            margin:0px 15px 40px 15px;
+// 手機板
+@for $i from 1 through 12 {
+    .col-#{$i} {
+        --num:calc(12/#{$i});
+        width: calc(100% /var(--num) - 30px);
+        margin: 0px 15px 40px 15px;
     }
 }
+
+// 手機結束
+
+// 768px star 平板
+@media(min-width:768px) {
+    @for $i from 1 through 12 {
+        .col-md-#{$i} {
+            --num:calc(12/#{$i});
+            width: calc(100% /var(--num) - 30px);
+            margin: 0px 15px 40px 15px;
+        }
+    }
 }
+
 // 768px end
 
-// 1200px star1
-@media(min-width:1200px){
-    @for $i from 1 through 12{
-        .col-lg-#{$i}{
+// 1200px star1 電腦版
+@media(min-width:1200px) {
+    @for $i from 1 through 12 {
+        .col-lg-#{$i} {
             --num:calc(12/#{$i});
-            width:calc(100% /var(--num) - 30px);
-            margin:0px 15px 40px 15px;
+            width: calc(100% /var(--num) - 30px);
+            margin: 0px 15px 40px 15px;
+        }
     }
 }
-}
+
 // 1200px end
 
 @media (min-width: 768px) {
     .order-md-1 {
-      order: -1;
+        order: -1;
     }
 }
 
@@ -266,7 +270,7 @@ dd>a {
 
 .text-primary {
     color: #bdb3a7;
-  }
+}
 
 .img-wrap {
     display: block;
@@ -275,7 +279,7 @@ dd>a {
 }
 
 .img-overlay {
-    overflow: hidden;
+    // overflow: hidden;
     border-radius: 8px;
 }
 
@@ -301,22 +305,26 @@ dd>a {
 
 }
 
+.flex-space-between {
+    justify-content: space-between;
 
+}
 
-//小於767px以上執行star********
+//小於767px以上執行star手機版********
 @media(max-width:767px) {
 
     // icon-meun
-    h1 {
-        width: 85%;
-        // background-color: darkgreen;
-        display: block;
-           
-    }
+
+    // h1 {
+    //     // width: 85%;
+    //     // background-color: darkgreen;
+    //     // display: block;
+
+    // }
 
     .icon-menu {
-        float: right;
-        width:15%;
+        // float: right;
+        width: 15%;
         display: block;
         background-color: rgb(8, 85, 172);
         color: azure;
@@ -324,39 +332,70 @@ dd>a {
         text-align: center;
     }
 
-    header>.container>nav {
-        width: 100%;
-        float: left;
-        // position: relative;
-        display: none;
+    header {
+        position: relative;
     }
 
-    header>.container>nav.active {
+    header>.container nav {
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        background-color:rgb(8, 85, 172);
+        // display: none;
+        //需要的可以使用以下程式碼
+        // position: fixed;
+        // top:0px;
+        // height: 100vh;
+        // z-index: 999;
+
+    }
+
+    // css menu動畫star
+    header>.container nav {
+        //viewport width
+        height:100vh;
+        left: -100vw;
+        // 上面這一行等二層選單完成再開啟
+         // opacity: 0;
+        transition: all .3s;
+    }
+
+    // 之後再搭配javascript要改寫選取器的寫法
+    .icon-menu:hover + nav {
+        left: 0px;
+        // opacity: 1;
+        
+    }
+// css menu動畫end
+
+    header>.container nav.active {
         display: block;
-    } 
+    }
 
 
-    header>.container>nav>ul {
+    header>.container nav>ul {
         display: block;
         // position: absolute;
     }
 
-    header>.container>nav>ul>li {
+    header>.container nav>ul>li {
+        text-align: center;
         width: 100%;
+        border-bottom: 1px solid $primary-color
     }
 
-    header>.container>nav>ul>li>a {
-       display: block;
-       background-color: rgb(130, 135, 135);
-       margin-bottom: 5px;
+    header>.container nav>ul>li>a {
+        display: block;
+
     }
 
-    .overflower-hidden {
-        overflow: hidden;
-    }
+    // .overflower-hidden {
+    //     overflow: hidden;
+    // }
 
 }
- // max-width:767 end*******
+
+// max-width:767 end*******
 
 
 
@@ -369,15 +408,15 @@ dd>a {
 
 // min-width:768 end******
 
-.titlebutton{
+.titlebutton {
     display: flex;
     width: 100%;
 }
 
-.titlebuttona{
+.titlebuttona {
     display: block;
-    padding:5px 20px 5px 20px;
+    padding: 5px 20px 5px 20px;
     background-color: #f7c309;
     margin-right: 30px;
-    
+
 }

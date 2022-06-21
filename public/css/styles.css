@@ -27,23 +27,23 @@ header {
   background-color: #eb7530;
 }
 
-header > .container > h1 {
+header > .container h1 {
   padding-top: 20px;
 }
 
-header > .container > h1 > a {
+header > .container h1 > a {
   color: #e9c16b;
 }
 
-header > .container > nav > ul {
+header > .container nav > ul {
   display: flex;
 }
 
-header > .container > nav > li {
+header > .container nav > li {
   margin-right: 30px;
 }
 
-header > .container > nav > ul > li > a {
+header > .container nav > ul > li > a {
   line-height: 60px;
   color: #f7c309;
   font-size: 1.2em;
@@ -79,13 +79,13 @@ header > .container > nav > ul > li > a {
 }
 
 .title a {
-  color: aquamarine;
+  color: #480c04;
   font-size: 1.5em;
   font-weight: 700;
 }
 
 .date {
-  color: #f7c309;
+  color: #ac6610;
 }
 
 h2 {
@@ -389,7 +389,6 @@ dd > a {
 }
 
 .img-overlay {
-  overflow: hidden;
   border-radius: 8px;
 }
 
@@ -413,14 +412,12 @@ dd > a {
   background-color: green;
 }
 
-@media (max-width: 767px) {
-  h1 {
-    width: 85%;
-    display: block;
-  }
+.flex-space-between {
+  justify-content: space-between;
+}
 
+@media (max-width: 767px) {
   .icon-menu {
-    float: right;
     width: 15%;
     display: block;
     background-color: #0855ac;
@@ -429,32 +426,43 @@ dd > a {
     text-align: center;
   }
 
-  header > .container > nav {
+  header {
+    position: relative;
+  }
+
+  header > .container nav {
     width: 100%;
-    float: left;
-    display: none;
+    position: absolute;
+    top: 60px;
+    background-color: #0855ac;
   }
 
-  header > .container > nav.active {
+  header > .container nav {
+    height: 100vh;
+    left: -100vw;
+    transition: all 0.3s;
+  }
+
+  .icon-menu:hover + nav {
+    left: 0px;
+  }
+
+  header > .container nav.active {
     display: block;
   }
 
-  header > .container > nav > ul {
+  header > .container nav > ul {
     display: block;
   }
 
-  header > .container > nav > ul > li {
+  header > .container nav > ul > li {
+    text-align: center;
     width: 100%;
+    border-bottom: 1px solid #f7c309;
   }
 
-  header > .container > nav > ul > li > a {
+  header > .container nav > ul > li > a {
     display: block;
-    background-color: #828787;
-    margin-bottom: 5px;
-  }
-
-  .overflower-hidden {
-    overflow: hidden;
   }
 }
 @media (min-width: 768px) {
