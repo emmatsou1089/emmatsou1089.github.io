@@ -1,5 +1,8 @@
 // 新增一個style.scss在scss資較夾內
 $primary-color: #f7c309;
+$main-color:rgb(8, 85, 172);
+
+
 
 * {
     margin: 0;
@@ -27,7 +30,9 @@ body {
     // background-color: rgb(146, 220, 130);
 }
 
-// ============
+// 電腦版 沒有特別標註
+
+// header star============
 // 頁首
 header {
     background-color: rgb(235, 117, 48);
@@ -39,7 +44,7 @@ header>.container h1 {
 }
 
 header>.container h1>a {
-    color: rgb(233, 193, 107);
+    color: $primary-color;
 }
 
 header>.container nav>ul {
@@ -58,8 +63,45 @@ header>.container nav>ul>li>a {
     letter-spacing: 2px;
 }
 
-// ========
-// 內容
+
+@media (min-width:768px) {
+
+    header>.container nav {
+        width: 100%;
+    }
+
+    header>.container nav>ul>li {
+        position: relative;
+    }
+
+    header>.container nav>ul>li:hover .submenu {
+        display: block;
+    }
+
+    .submenu {
+        position: absolute;
+        background-color: $main-color;
+        width: 160%;
+        left: 0px;
+        // bottom: 0px;
+        top: 60px;
+        padding: 10px;
+        display: none;
+    }
+
+    .submenu>li {
+        line-height: 40px;
+    }
+
+    .submenu>li>a {
+        color: #bdb3a7;
+    }
+
+}
+
+// header end========
+
+// 內容區塊
 
 .img-fluid {
     width: 100%;
@@ -204,7 +246,8 @@ h2 {
 
 // 頁尾區塊
 footer {
-    background: $primary-color;
+    background: $main-color;
+    ;
     padding: 40px 0px 40px 0；
 }
 
@@ -326,7 +369,7 @@ dd>a {
         // float: right;
         width: 15%;
         display: block;
-        background-color: rgb(8, 85, 172);
+        background-color: $main-color;
         color: azure;
         line-height: 60px;
         text-align: center;
@@ -340,7 +383,7 @@ dd>a {
         width: 100%;
         position: absolute;
         top: 60px;
-        background-color:rgb(8, 85, 172);
+        background-color: $main-color;
         // display: none;
         //需要的可以使用以下程式碼
         // position: fixed;
@@ -353,20 +396,22 @@ dd>a {
     // css menu動畫star
     header>.container nav {
         //viewport width
-        height:100vh;
-        left: -100vw;
+        height: 100vh;
+
+        // left: -100vw;
         // 上面這一行等二層選單完成再開啟
-         // opacity: 0;
+        // opacity: 0;
         transition: all .3s;
     }
 
     // 之後再搭配javascript要改寫選取器的寫法
-    .icon-menu:hover + nav {
+    .icon-menu:hover+nav {
         left: 0px;
         // opacity: 1;
-        
+
     }
-// css menu動畫end
+
+    // css menu動畫end
 
     header>.container nav.active {
         display: block;
@@ -389,24 +434,46 @@ dd>a {
 
     }
 
+
+
+    .submenu {
+        display: none;
+        background-color: #4c649c;
+    }
+
+    header>.container nav>ul>li:hover .submenu {
+        display: block;
+
+    }
+
+    .submenu>li {
+        line-height: 60px;
+        border-bottom: 1px solid black;
+    }
+
+    .submenu>li>a {
+        color: $primary-color;
+        display: block;
+    }
+
     // .overflower-hidden {
     //     overflow: hidden;
     // }
 
 }
 
-// max-width:767 end*******
+// max-width:767 end***********
 
 
 
-// 超過768px以上執行
+// 超過768px以上執行*************
 @media(min-width:768px) {
     .icon-menu {
         display: none;
     }
 }
 
-// min-width:768 end******
+// min-width:768 end**************
 
 .titlebutton {
     display: flex;
