@@ -1,6 +1,6 @@
 // 新增一個style.scss在scss資較夾內
 $primary-color: #f7c309;
-$main-color:rgb(8, 85, 172);
+$main-color: rgb(8, 85, 172);
 
 
 
@@ -53,7 +53,7 @@ header>.container nav>ul {
 }
 
 header>.container nav>li {
-    margin-right: 30px;
+    // margin-right: 30px;
 }
 
 header>.container nav>ul>li>a {
@@ -75,60 +75,63 @@ header>.container nav>ul>li>a {
         position: relative;
     }
 
-    // logo置中 star
-header{
-    position: relative;
-}
-
-header>.container h1{
-    position: absolute;
-    left:50%;
-    background-color: green;
-    transform: translateX(-50%);
-    background-color: blueviolet;
-    line-height: 60px;
-    padding-top:0px ;
-}
-header nav{
-    display: flew;
-    justify-content: center;
-}
-
-header>.container nav>ul>li{
-    margin-left: 20px;
-    // margin-right: 20px;
-}
-header>.container nav>ul>li:nth-child(2){
-    margin-right:250px;
-}
-
-
- // logo置中end
-
-
-
     header>.container nav>ul>li:hover .submenu {
         display: block;
     }
 
-    .submenu {
-        position: absolute;
-        background-color: $main-color;
-        width: 160%;
-        left: 0px;
-        // bottom: 0px;
-        top: 60px;
-        padding: 10px;
-        display: none;
-    }
 
-    .submenu>li {
-        line-height: 40px;
-    }
 
-    .submenu>li>a {
-        color: #bdb3a7;
-    }
+   
+
+   
+    
+  // 置中logo start
+//   header{
+//     position: relative;
+// }
+// header > .container h1{
+//     position: absolute;
+//     left:50%;
+//     // margin-left: -102px;
+//     transform: translateX(-50%);
+//     // background-color: green;
+//     line-height: 60px;
+//     padding-top: 0px;
+// }
+// header nav{
+//     display: flex;
+//     justify-content: center;
+// }
+// header>.container nav>ul>li{
+//     margin-left:20px;
+//     // margin-right: 20px;
+// }
+// header>.container nav>ul>li:nth-child(2){
+//     margin-right: 250px;
+// }
+
+
+//     //  // logo置中end
+
+
+.submenu{
+    position: absolute;
+    background-color: $primary-color;
+    width: 160%;
+    left: 0px;
+    // bottom:0px;
+    top:60px;
+    padding:10px;
+    display: none;
+}
+.submenu>li{
+    line-height: 40px;
+}
+.submenu>li>a{
+    color:black;
+}
+
+
 
 }
 
@@ -427,9 +430,10 @@ dd>a {
     }
 
     // css menu動畫star
-    header>.container nav {
+    nav {
         //viewport width
         height: 100vh;
+       left: px;
 
         // left: -100vw;
         // 上面這一行等二層選單完成再開啟

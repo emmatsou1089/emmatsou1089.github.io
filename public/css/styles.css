@@ -39,10 +39,6 @@ header > .container nav > ul {
   display: flex;
 }
 
-header > .container nav > li {
-  margin-right: 30px;
-}
-
 header > .container nav > ul > li > a {
   line-height: 60px;
   color: #f7c309;
@@ -60,40 +56,13 @@ header > .container nav > ul > li > a {
     position: relative;
   }
 
-  header {
-    position: relative;
-  }
-
-  header > .container h1 {
-    position: absolute;
-    left: 50%;
-    background-color: green;
-    transform: translateX(-50%);
-    background-color: blueviolet;
-    line-height: 60px;
-    padding-top: 0px;
-  }
-
-  header nav {
-    display: flew;
-    justify-content: center;
-  }
-
-  header > .container nav > ul > li {
-    margin-left: 20px;
-  }
-
-  header > .container nav > ul > li:nth-child(2) {
-    margin-right: 250px;
-  }
-
   header > .container nav > ul > li:hover .submenu {
     display: block;
   }
 
   .submenu {
     position: absolute;
-    background-color: #0855ac;
+    background-color: #f7c309;
     width: 160%;
     left: 0px;
     top: 60px;
@@ -106,7 +75,7 @@ header > .container nav > ul > li > a {
   }
 
   .submenu > li > a {
-    color: #bdb3a7;
+    color: black;
   }
 }
 .img-fluid {
@@ -496,8 +465,9 @@ dd > a {
     background-color: #0855ac;
   }
 
-  header > .container nav {
+  nav {
     height: 100vh;
+    left: px;
     transition: all 0.3s;
   }
 
